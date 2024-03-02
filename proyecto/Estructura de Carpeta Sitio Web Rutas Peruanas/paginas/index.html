@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rutas Peruanas</title>
+    <link rel="stylesheet" href="../css/estilos-general.css">
 </head>
 <body>
     <div id="contenedor">
         <header>
-        <div id="logo">
-            <img src="../imagenes/inicio/logo.png" alt="">
-        </div>
-        <div id="menu">
-            <a href="index.html">Inicio</a>
-            <a href="calendario_festivo.html">Calendario Festivo</a>
-            <a href="experiencias.html">Experiencias</a>
-            <a href="contacteno.html">Contactenos</a>
-            
-        </div>
+            <img id="logo" src="../imagenes/inicio/logo.png" alt="">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                    <ul>
+                        <li><a href="#">Mision</a></li>
+                        <li><a href="#">Vision</a></li>
+                    </ul>
+                <li><a href="calendario_festivo.html">Calendario Festivo</a></li>
+                    <ul>
+                        <li><a href="#">Carnaval Cajamarquino</a></li>
+                        <li><a href="#">Fiestas de la Calendaria</a></li>
+                        <li><a href="#">Fiesta Ayachuchana</a></li>
+                    </ul>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                    <ul>
+                        <li><a href="#">Histórico Cultural</a></li>
+                        <li><a href="#">Aventura</a></li>
+                        <li><a href="#">Naturaleza</a></li>
+                        <li><a href="#">Gastronomía</a></li>
+                        <li><a href="#">Vivencial</a></li>
+                        <li><a href="#">Entretenimiento</a></li>
+                        <li><a href="#">Exclusivo</a></li>
+                    </ul>
+                <li><a href="contacteno.html">Contactenos</a></li>
+            </ul>
+
+        </nav>
         <div id="buscar">
-<input type="text"><button>Bucar</button>
-            
+            <div class="buscar-1">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input id="search" placeholder="Buscar..." type="search">
+            </div>
         </div>
 
         </header>
