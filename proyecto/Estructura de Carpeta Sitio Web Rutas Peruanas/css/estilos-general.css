@@ -32,6 +32,7 @@ p {
 }
 
 header {
+    position: fixed;
     display: flex;
     align-items: center;
     background-color: #333;
@@ -46,7 +47,7 @@ header {
     width: 100px;
     height: 100px;
 }
-
+/*contenedor del menu*/
 nav {
     display: flex;
     padding-right: 20px;
@@ -208,4 +209,3 @@ nav {
     display:block;
    }
 
-   
