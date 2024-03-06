@@ -8,15 +8,29 @@ main section{
     background-color: white;
 
 }
-.section-body{
+
+.main-contenido{
+    width: 100%;
+    display: flex;
+}
+.main-contenido-left{
     width: 70%;
+}
+.main-contenido-right{
+    width: 30%;
+    background-color: white;
+}
+
+.section-body{
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px 0px 30px 0px;
-    margin-left: 15%;
+    margin-left: 5%;
 }
+
 /*Estilos de Titulo*/
 .section-titulo{
     text-align: center;
@@ -47,7 +61,15 @@ main section{
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid chocolate;
-
+    border-bottom: 10px solid chocolate;
+    transition: 0.5s;
+}
+.section-card:hover{
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    -webkit-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 13px 3px rgba(0,0,0,0.68);
 }
 .section-card-img{
     display: flex;
@@ -55,12 +77,17 @@ main section{
     align-items: self-end;
 
 }
+.section-card-img img{
+    height: 100%;
+    border-bottom: 1px solid chocolate;
+}
 .section-card-img h3{
     position: absolute;
     margin-bottom: -15px;
-    margin-left: 10px;
+    margin-left: 0px;
     padding: 5px 10px 5px 10px;
     color: white;
+    border-radius: 0px 20px 20px 0px ;
 
 }
 .section-card-img a{
@@ -85,11 +112,6 @@ main section{
 }
 .section-card-texto p{
     margin: 0px;
-
-}
-.section-card-footer{
-    height: 10px;
-    background: chocolate;
 
 }
 /*Colores de Tarjeta*/
@@ -123,6 +145,7 @@ main section{
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid chocolate;
+    border-bottom: 10px solid chocolate;
 }
 .section-card-img-2{
     width: 50%;
@@ -132,7 +155,7 @@ main section{
 }
 .section-card-img-2 img{
    height: 100%;
-
+   border-left: 1px solid chocolate;
     
 }
 .section-card-texto-2{
@@ -154,11 +177,6 @@ main section{
     text-decoration: none;
     color: white;
     
-}
-.section-card-footer-2{
-    height: 10px;
-    background-color: chocolate;
-
 }
 /* section video*/
 .section-body-video {
@@ -204,4 +222,54 @@ main section{
       transform: scale(1.7);
   }
   /* fin section video*/
+
+  .main-contenido-right section{
+    margin-top: 40px ;
+    margin-left: 10%;
+    width: 80%;
+    flex-wrap: wrap;
+    background-color: rgb(222, 226, 226);
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*estilos para la seccion del lado derecho*/
+  .section-head{
+    margin-left: 5%;
+    width: 100%;
+    font-family: Candara;
+  }
+  .section-head h4{
+    padding-top: 20px;
+    color: #333;
+  } 
+  .section-head input{
+    width: 50%;
+    height: 30px;
+    border: 1px solid #333;
+    border-radius: 3px;
+  } 
+  .section-head a{
+    background-color: rgb(222, 226, 226);
+    width: 50%;
+    padding: 5px 5px;
+    border: 1px solid #8f8c8c;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+  } 
+  .section-head h3{
+    width: 90%;
+    padding-right: 0px;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    border-top: 1px solid #8f8c8c;;
+    border-bottom: 1px solid #8f8c8c;;
+}
+
+  /* fin - estilos para la seccion del lado derecho*/
+  
   

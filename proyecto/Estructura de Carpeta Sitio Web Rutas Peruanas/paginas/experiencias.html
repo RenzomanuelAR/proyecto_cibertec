@@ -3,221 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-general.css">
     <link rel="stylesheet" href="../css/experiencias.css">
+    <link rel="stylesheet" href="../css/estilos-contenido.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <title>Página de Turismo</title>
 </head>
 <body>
-    <header>
+    <div id="contenedor">
+        <!--Enlace whatsapp-->
+        <div id="whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=51962254126&text=Hola!,%20te%20asesoramos%20por
+        %20whatsapp%20consula%20directamente%20con%20un%20representante." target="_blank">
+            <svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+            <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+                <g class="layer">
+                <title>Layer 1</title>
+                <circle cx="40" cy="40" fill="#fff" id="svg_1" r="38" stroke="#000000" stroke-width="0"/>
+                <path d="m57.81072,21.975c-4.48928,-4.5 -10.46786,-6.975 -16.82142,-6.975c-13.11429,0 -23.78571,10.67143 -23.78571,23.78571c0,4.18928 1.09286,8.28215 3.17143,11.89286l-3.375,12.32142l12.61072,-3.31072c3.47143,1.89642 7.38215,2.89286 11.36786,2.89286l0.01072,0c13.10358,0 24.01072,-10.67143 24.01072,-23.78571c0,-6.35357 -2.7,-12.32142 -7.18928,-16.82142l-0.00001,-0.00001l-0.00001,0l-0.00002,0.00001zm-16.82142,36.6c-3.55714,0 -7.03928,-0.95357 -10.07143,-2.75357l-0.71785,-0.42857l-7.47858,1.96072l1.99286,-7.29642l-0.47143,-0.75c-1.98215,-3.15 -3.02142,-6.78215 -3.02142,-10.52142c0,-10.89642 8.87143,-19.76786 19.77858,-19.76786c5.28215,0 10.24286,2.05714 13.97143,5.79642c3.72857,3.73928 6.02142,8.7 6.01072,13.98215c0,10.90714 -9.09642,19.77858 -19.99286,19.77858l0,-0.00002l-0.00001,0l-0.00001,-0.00001zm10.84286,-14.80714c-0.58928,-0.3 -3.51429,-1.73572 -4.06072,-1.92857c-0.54643,-0.20358 -0.94286,-0.3 -1.33928,0.3c-0.39642,0.6 -1.53214,1.92857 -1.88571,2.33572c-0.34286,0.39642 -0.69642,0.45 -1.28571,0.15c-3.49286,-1.74643 -5.78571,-3.11785 -8.08928,-7.07143c-0.61072,-1.05 0.61072,-0.975 1.74643,-3.24643c0.19286,-0.39642 0.09642,-0.73928 -0.05357,-1.03928c-0.15,-0.3 -1.33928,-3.225 -1.83214,-4.41429c-0.48215,-1.15714 -0.975,-0.99642 -1.33928,-1.01785c-0.34286,-0.02142 -0.73928,-0.02142 -1.13572,-0.02142c-0.39642,0 -1.03928,0.15 -1.58571,0.73928c-0.54643,0.6 -2.07858,2.03572 -2.07858,4.96072c0,2.925 2.13214,5.75357 2.42142,6.15c0.3,0.39642 4.18928,6.39642 10.15714,8.97858c3.77143,1.62857 5.25,1.76786 7.13572,1.48928c1.14643,-0.17143 3.51429,-1.43572 4.00714,-2.82857c0.49286,-1.39286 0.49286,-2.58215 0.34286,-2.82857c-0.13928,-0.26786 -0.53572,-0.41785 -1.125,-0.70714l-0.00001,-0.00001l0.00002,-0.00001l-0.00002,-0.00001z" fill="currentColor" id="svg_2"/>
+                </g>
+            </svg>        
+            </a>
+        </div>
+        <!--Fin enlace whatsapp-->
+
+        <!--Inicio cabecera, menu-->
+        <header class="contenidoHeader"></header>
+        <script>
+            $(document).ready(function () {
+              $('.contenidoHeader').load('./header.html');
+            });
+        </script>
+        <!--Fin cabecera, menu-->
+
+        <!--Inicio banner-->
         <div id="banner">
-            <h1>Destinos Turísticos</h1>
+            <div class="info">
+              <h1>
+                  ¡En el Perú hay eventos que no te puedes perder!<br>Encuéntralos aquí.
+              </h1>
+            </div>
         </div>
-    </header>
-    
-    <main>
-        <section id="historico">
-            <h2>Historico Cultural</h2>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Museo.jpg">
-                <h3>Museos</h3>
-                <p>Los museos de Lima</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../imagenes/EXPERIENCIAS/Centro Histórico.jpg">
-                <h3>Centros Históricos</h3>
-                <p>Donde la historia y el arte tocan la puerta del cielo</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../imagenes/EXPERIENCIAS/Plaza de Armas.jpg">
-                <h3>Plazas Principales</h3>
-                <p>Conociendo la Lima colonial</p>
-            </div>
-        </section>
+        <!--Fin banner-->
 
-        <hr>
-
-        <section id="aventura">
-            <h2>Aventura</h2>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Andinismo.jpg">
-                <h3>Andinismo</h3>
-                <p>Tú puedes hacer cumbre</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Trekking.jpg">
-                <h3>Trekking Camino Inca</h3>
-                <p>Supera todas tus expectativas</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Parapente.jpg">
-                <h3>Parapente</h3>
-                <p>Vuelo sobre la playa y la ciudad</p>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="naturaleza">
-            <h2>Naturaleza</h2>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Playa del Norte.jpg">
-                <h3>Actividades en la playa</h3>
-                <p>Aventuras en la mitad del mundo</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Avistamiento de Flora.jpg">
-                <h3>Avistamiento de flora</h3>
-                <p>La biodiversidad amazónica te espera</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Avistamiento de Fauna Marina.jpg">
-                <h3>Avistamiento de fauna</h3>
-                <p>Un tesoro escondido en el fondo del mar</p>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="gastronomia">
-            <h2>Gastronomía</h2>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Gastronomia Peruana.jpg">
-                <h3>Gastronomía Peruana</h3>
-                <p>Perú tiene esos sabores que tanto buscabas</p>
-            </div>
+        <!--Inicio contenido main-->
+        <main>
+            <section id="historico">
+                <div class="section-titulo">
+                    <h1 class="title">Historico Cultural</h1>
+                </div>
                 
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Ruta del Pisco.jpg">
-                <h3>La Ruta del Pisco</h3>
-                <p>Sabores y aromas inconfundibles</p>
-            </div>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Recorrido del Sabor.jpg">
-                <h3>Recorrido del Sabor</h3>
-                <p>Peregrinaje por uno de las mejores gastronomías del mundo</p>
-            </div>
-        </section>
-        
-        <hr>
-
-        <section id="vivencial">
-            <h2>Vivencial</h2>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Ticonata.jpg">
-                <h3>Ticonata</h3>
-                <p>Escenarios inimaginables</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Amantani.jpg">
-                <h3>Amantaní</h3>
-                <p>Paraiso rodeado de agua</p>
-            </div>
-            
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Huilloc.jpg">
-                <h3>Huilloc</h3>
-                <p>Vive el Imperio Inca</p>
-            </div>
-        </section>
-        
-        <hr>
-
-        <section id="entretenimiento">
-            <h2>Paseo en bicicleta en Lima</h2>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Ciclismo Lima.jpg">
-                <h3>Paseo en bicicleta en Lima</h3>
-                <p>Lima sobre dos ruedas</p>
-            </div>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Teatro.jpg">
-                <h3>Teatros</h3>
-                <p>Perú a tráves de los ojos</p>
-            </div>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Shopping.jpg">
-                <h3>Shopping de artesania</h3>
-                <p>Donde el conocimiento parece infinito</p>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="exclusivo">
-            <h2>Exclusivo</h2>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Crucero Rio Amazonas.jpg">
-                <figcaption>Crucero por el Río Amazonas</figcaption>
-                <p>La selva desde un lugar privilegiado</p>
-            </div>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Glamping.jpg">
-                <figcaption>Glamping en las Alturas</figcaption>
-                <p>Es un honor estar arriba</p>
-            </div>
-
-            <div class="opcion">
-                <img src="../Imagenes/EXPERIENCIAS/Paseo tren de lujo.jpg">
-                <figcaption>Paseo en tren de lujo</figcaption>
-                <p>Donde el privilegio viene sobre rieles</p>
-            </div>
-        </section>
-
-    </main>
-
-    <section class="footer-main">
-        <div class="footer-main-item">
-            <h3 class="footer-titulo">Encuentranos En:</h3>
-            <ul>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a></li>
-            </ul>
-        </div>
-        <div class="footer-main-item">
-            <h3 class="footer-titulo">Sitios de Interés:</h3>
-            <ul>
-                <li><a href="#">Prom Perú</a></li>
-                <li><a href="#">Destino Perú</a></li>
-                <li><a href="#">Travel Perú</a></li>
-                <li><a href="#">Migraciones</a></li>
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Museo.jpg">
+                    <h3>Museos</h3>
+                    <p>Los museos de Lima</p>
+                </div>
                 
-            </ul>
-        </div>
-        <div class="footer-main-item">
-            <h3 class="footer-titulo">Contactenos:</h3>
-            <p>
-                <i class="fa fa-map" aria-hidden="true"></i> Calle las Palmeras 121 <br>
-                Cercado, Lima, Lima.
-            </p>
-            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> (+51) 962254856</a>
-        </div>
-    </section>
-    <section class="footer-legal">
-        <ul class="footer-legal-list">
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li>&copy; 2024 Copyright RMA&LV</li>
-            </ul>
-    </section>
+                <div class="opcion">
+                    <img src="../imagenes/EXPERIENCIAS/Centro Histórico.jpg">
+                    <h3>Centros Históricos</h3>
+                    <p>Donde la historia y el arte tocan la puerta del cielo</p>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../imagenes/EXPERIENCIAS/Plaza de Armas.jpg">
+                    <h3>Plazas Principales</h3>
+                    <p>Conociendo la Lima colonial</p>
+                </div>
+            </section>
     
+            <hr>
+    
+            <section id="aventura">
+                <div class="section-titulo">
+                    <h1 class="title">Aventura</h1>
+                </div>
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Andinismo.jpg">
+                    <h3>Andinismo</h3>
+                    <p>Tú puedes hacer cumbre</p>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Trekking.jpg">
+                    <h3>Trekking Camino Inca</h3>
+                    <p>Supera todas tus expectativas</p>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Parapente.jpg">
+                    <h3>Parapente</h3>
+                    <p>Vuelo sobre la playa y la ciudad</p>
+                </div>
+            </section>
+    
+            <hr>
+    
+            <section id="naturaleza">
+                <div class="section-titulo">
+                    <h1 class="title">Naturaleza</h1>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Playa del Norte.jpg">
+                    <h3>Actividades en la playa</h3>
+                    <p>Aventuras en la mitad del mundo</p>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Avistamiento de Flora.jpg">
+                    <h3>Avistamiento de flora</h3>
+                    <p>La biodiversidad amazónica te espera</p>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Avistamiento de Fauna Marina.jpg">
+                    <h3>Avistamiento de fauna</h3>
+                    <p>Un tesoro escondido en el fondo del mar</p>
+                </div>
+            </section>
+    
+            <hr>
+    
+            <section id="gastronomia">
+                <div class="section-titulo">
+                    <h1 class="title">Gastronomía</h1>
+                </div>  
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Gastronomia Peruana.jpg">
+                    <h3>Gastronomía Peruana</h3>
+                    <p>Perú tiene esos sabores que tanto buscabas</p>
+                </div>
+                    
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Ruta del Pisco.jpg">
+                    <h3>La Ruta del Pisco</h3>
+                    <p>Sabores y aromas inconfundibles</p>
+                </div>
+    
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Recorrido del Sabor.jpg">
+                    <h3>Recorrido del Sabor</h3>
+                    <p>Peregrinaje por uno de las mejores gastronomías del mundo</p>
+                </div>
+            </section>
+            
+            <hr>
+    
+            <section id="vivencial">
+                <div class="section-titulo">
+                    <h1 class="title">Vivencial</h1>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Ticonata.jpg">
+                    <h3>Ticonata</h3>
+                    <p>Escenarios inimaginables</p>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Amantani.jpg">
+                    <h3>Amantaní</h3>
+                    <p>Paraiso rodeado de agua</p>
+                </div>
+                
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Huilloc.jpg">
+                    <h3>Huilloc</h3>
+                    <p>Vive el Imperio Inca</p>
+                </div>
+            </section>
+            
+            <hr>
+    
+            <section id="entretenimiento">
+                <div class="section-titulo">
+                    <h1 class="title">Paseo en bicicleta en Lima</h1>
+                </div>
+   
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Ciclismo Lima.jpg">
+                    <h3>Paseo en bicicleta en Lima</h3>
+                    <p>Lima sobre dos ruedas</p>
+                </div>
+    
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Teatro.jpg">
+                    <h3>Teatros</h3>
+                    <p>Perú a tráves de los ojos</p>
+                </div>
+    
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Shopping.jpg">
+                    <h3>Shopping de artesania</h3>
+                    <p>Donde el conocimiento parece infinito</p>
+                </div>
+            </section>
+    
+            <hr>
+    
+            <section id="exclusivo">
+                <div class="section-titulo">
+                    <h1 class="title">Exclusivo</h1>
+                </div>
+    
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Crucero Rio Amazonas.jpg">
+                    <h3>Crucero por el Río Amazonas</h3>
+                    <p>La selva desde un lugar privilegiado</p>
+                </div>
+    
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Glamping.jpg">
+                    <h3>Glamping en las Alturas</h3>
+                    <p>Es un honor estar arriba</p>
+                </div>
+    
+                <div class="opcion">
+                    <img src="../Imagenes/EXPERIENCIAS/Paseo tren de lujo.jpg">
+                    <h3>Paseo en tren de lujo</h3>
+                    <p>Donde el privilegio viene sobre rieles</p>
+                </div>
+            </section>
+    
+        </main>
+        <!--Fin contenido main-->
+        <!--Fin main contenido-->
+        <!--Inicio footer-->
+        <footer class="contenidoFooter"></footer>
+        <script>
+                $(document).ready(function () {
+                $('.contenidoFooter').load('./footer.html');
+                });
+        </script>
+        <!--Fin footer-->
+    </div>  
 </body>
 </html>

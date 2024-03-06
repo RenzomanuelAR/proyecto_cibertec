@@ -1,39 +1,55 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+main{
+    margin: 0px;
+    padding: 0px;
 }
 
-header {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 30px;
+main section{
+    width: 100%;
+    background-color: #eee;
 }
 
 .opcion {
+    margin: 20px;
+    border: 1px solid chocolate;
     margin-top: 20px;
     display: inline-block;
     width: 30%;
     text-align: center;
 
+    border-radius: 15px;
+    overflow: hidden;
+    border-bottom: 10px solid chocolate;
+
 }
 
 .opcion img {
     max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd; /* Agrega un borde a las imágenes para mejorar la apariencia */
-    padding: 5px; /* Añade espacio alrededor de las imágenes */
-    width: 300px;
     height: 200px;
+    width: 100%;
+    transition: 1s;
+    border-bottom: 1px solid chocolate;
 }
 
+.opcion img:hover {
+    object-fit: cover;
+    transform: scale(1.3);
+}
+
+
+.opcion h3 {
+    position:absolute;
+    padding: 5px 15px 5px 10px;
+    margin-top: -25px;
+    background-color: chocolate;
+    color: aliceblue;
+    border-radius: 0px 20px 20px 0px ;
+}
+
+.opcion p{
+
+    padding: 5px 15px 5px 10px;
+    margin-top: 25px;
+    color: #333;
+
+}
     
