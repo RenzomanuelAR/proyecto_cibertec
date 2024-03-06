@@ -75,7 +75,7 @@ main section{
     display: flex;
     justify-content: left;
     align-items: self-end;
-
+    height: 250px;
 }
 .section-card-img img{
     height: 100%;
@@ -149,6 +149,7 @@ main section{
 }
 .section-card-img-2{
     width: 50%;
+    height: 300px;
     justify-content: left;
     align-items: self-end;
     
@@ -262,13 +263,44 @@ main section{
     width: 90%;
     padding-right: 0px;
     margin-top: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
     color: #333;
-    border-top: 1px solid #8f8c8c;;
-    border-bottom: 1px solid #8f8c8c;;
+    border-top: 2px solid #8f8c8c;;
+    border-bottom: 2px solid #8f8c8c;;
 }
+
+.section-card-3{
+    display: flex;
+    background-color: aliceblue;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+.section-card-img-3{
+    width: 50%;
+}
+.section-card-img-3 img{
+    width: 100%;
+    height: 100%;
+}
+.section-card-texto-3{
+    width: 50%;
+    color: #454647;
+}
+
+.section-card-texto-3 h3{
+    padding: 0px 5px 5px 15px;
+}
+.section-card-texto-3 a{
+    text-decoration: none;
+    color: #454647;
+}
+.section-card-texto-3 p{
+    padding: 0px 5px 5px 15px;
+}
+
 
   /* fin - estilos para la seccion del lado derecho*/
   
