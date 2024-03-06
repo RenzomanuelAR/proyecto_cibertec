@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.opcion {
+    margin-top: 20px;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+
+}
+
+.opcion img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Agrega un borde a las imágenes para mejorar la apariencia */
+    padding: 5px; /* Añade espacio alrededor de las imágenes */
+    width: 300px;
+    height: 200px;
+}
+
+    
