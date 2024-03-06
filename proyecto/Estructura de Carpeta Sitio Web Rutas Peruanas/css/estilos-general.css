@@ -1,3 +1,10 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
 body {
     padding: 0px;
     margin: 0px;
@@ -32,6 +39,7 @@ p {
 }
 
 header {
+    z-index: 1;
     position: fixed;
     display: flex;
     align-items: center;
@@ -227,6 +235,7 @@ nav {
     .footer-main{
         display: flex;
         flex-wrap: wrap;
+        padding: 20px;
 
     }
 @media only screen and (min-width: 29.8125rem /* 477px */) {
@@ -305,3 +314,19 @@ footer ul{
     -webkit-text-stroke-color: rgb(26, 24, 24);
     
 }
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+ }
+ svg {
+    width: 80px;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+ }
+ 
+ circle {
+    fill: #25d366;
+ }
+ path {
+    fill: #fff;
+ }
