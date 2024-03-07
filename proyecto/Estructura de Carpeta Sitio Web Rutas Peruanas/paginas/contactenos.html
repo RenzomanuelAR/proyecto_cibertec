@@ -63,30 +63,45 @@
                             
                         </form>
                     </div>
-
-                    <div class="section-card-img-2"> 
+                    
+                    <div class="container">
+                      <div class="form-container">
+                        <form>
+                          <label for="nombre">Nombre:</label>
+                          <input type="text" id="nombre" name="nombre" required>
+                          <br>
+                          <label for="email">E-mail:</label>
+                          <input type="email" id="email" name="email" required>
+                          <br>
+                          <label for="telefono">Teléfono:</label>
+                          <input type="tel" id="telefono" name="telefono">
+                          <br>
+                          <label for="asunto">Asunto:</label>
+                          <input type="text" id="asunto" name="asunto">
+                          <br>
+                          <label for="mensaje">Mensaje:</label>
+                          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                          <br>
+                          <button type="submit">Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                        <div class="section-card-img-2"> 
                           <img src="../Imagenes/inicio/mision.jpg" alt="">
+                        </div>
+                                        
                     </div>
-                      
-                    </div>
-                  </div> 
-                </div>
-                <div class="section-footer">
-
-                </div>
-              </section>    
         </main>
-        <!--Fin contenido main-->
-        <!--Fin main contenido-->
-        
-        <!--Inicio footer-->
+    <!--Fin contenido main-->
+    <!--Fin main contenido-->
+    <!--Inicio footer-->
         <footer class="contenidoFooter"></footer>
-        <script>
+            <script>
                 $(document).ready(function () {
                 $('.contenidoFooter').load('./footer.html');
                 });
-        </script>
-        <!--Fin footer-->
-    </div>  
+            </script>
+    <!--Fin footer-->
+    </div>                  
 </body>
 </html>
