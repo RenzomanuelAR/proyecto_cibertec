@@ -1,0 +1,39 @@
+ 
+  div form {
+    display: grid;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  label {
+    margin: 0px;
+    display: block;
+    margin-top: 4px;
+  }
+  
+  input{
+        width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 150px;
+    margin-top: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  
