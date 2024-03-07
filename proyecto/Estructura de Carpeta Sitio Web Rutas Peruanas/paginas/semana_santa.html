@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../css/estilos-general.css">
-    <link rel="stylesheet" href="../css/estilos-contactenos.css">
+    <link rel="stylesheet" href="../css/experiencias.css">
     <link rel="stylesheet" href="../css/estilos-contenido.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <title>Página de Turismo</title>
@@ -50,74 +48,38 @@
 
         <!--Inicio contenido main-->
         <main>
-          <!--Misión Visión y Valores-->
-          <section>
-            <div class="section-titulo">
-              <h1 class="title">Contáctanos</h1>
-            </div>
-            <div class="section-body">
-              <div class="section-card-4">
-                <div class="contenido-card-4">
-                  <div class="section-card-texto-4">
-                    <h3 class="fondo-chocolate">Formulario</h3>
-                        <p>Gracias por su interés en contactarnos. Por favor complete el siguiente formulario y le responderemos lo antes posible.</p>
-                        <form>
-                          <label for="nombre">Nombre:</label>
-                          <input type="text" id="nombre" name="nombre" required>
-
-                          <label for="email">E-mail:</label>
-                          <input type="email" id="email" name="email" required>
-
-                          <label for="telefono">Teléfono:</label>
-                          <input type="tel" id="telefono" name="telefono">
-
-                          <label for="asunto">Asunto:</label>
-                          <input type="text" id="asunto" name="asunto">
-
-                          <label for="mensaje">Mensaje:</label>
-                          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                          <button type="submit">Enviar</button>
-                        </form>
-                  </div>
-                  <div class="section-card-img-4"> 
-                      <div class="section-card-img-etiqueta-4">
-                        <div>
-                          <h3>Asistenacia</h3>
-                          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> (+51) 962254856</a>
-                          <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> (+51) 962254857</a>
-                          <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> atencion@rutasperuanas.com</a>
-                        </div>
-                        <div>
-                          <h3>Oficina</h3>
-                          <p>Calle las Palmeras 121 <br>
-                            Cercado, Lima, Lima.</p>
-                          <h3>Horario de atención</h3>
-                          <p>Nuestros servicio es de lunes  a viernes de <br>09:00 a 18:00 y los sábados de 09:00 a 13:00</p>
-                        </div>                        
-                      </div>                    
-                      <img src="../Imagenes/inicio/mision.jpg" alt="">
-
-
-                  </div>
-                  
+            <section>
+                <div class="section-titulo">
+                  <h1 class="title">Rutas Peruanas</h1>
                 </div>
-              </div> 
-            </div>
-            <div class="section-footer">
-            </div>
-          </section>
-          <!--Fin Misión Visión y Valores-->
+                <div class="section-body">
+                  <div class="section-card">
+                    <div class="section-card-img"> 
+                      <img src="../Imagenes/calendario_festivo/INTI_RAYMI/Inti_Raymi.jpg" alt="">
+                      <h3 class="fondo-chocolate"> <a href="calendario_festivo.html">Calendario Festivo</a></h3>
+                    </div>
+                    <div class="section-card-texto">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-footer">
+        
+                </div>
+              </section>
+    
         </main>
-    <!--Fin main contenido-->
-    <!--Inicio footer-->
+        <!--Fin contenido main-->
+        <!--Fin main contenido-->
+        
+        <!--Inicio footer-->
         <footer class="contenidoFooter"></footer>
-            <script>
+        <script>
                 $(document).ready(function () {
                 $('.contenidoFooter').load('./footer.html');
                 });
-            </script>
-    <!--Fin footer-->
-    </div>                  
+        </script>
+        <!--Fin footer-->
+    </div>  
 </body>
 </html>

@@ -1,32 +1,21 @@
-  
-  .container {
-    justify-content: space-between;
-    width: 800px; /* Ajusta el ancho total según tus necesidades */
-    display: block;
-}
-  
-  .form-container {
-    width: 60%; /* Ajusta el ancho del formulario según tus necesidades */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-  }
-  
+ 
   div form {
     display: grid;
-    gap: 10px;
-    max-width: 300px;
     margin: 0 auto;
     text-align: left;
   }
   
   label {
+    margin: 0px;
     display: block;
-    margin-bottom: 8px;
+    margin-top: 4px;
   }
   
-  input,
+  input{
+        width: 70%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
   textarea {
     width: 100%;
     padding: 8px;
@@ -34,6 +23,8 @@
   }
   
   button {
+    width: 150px;
+    margin-top: 8px;
     background-color: #4caf50;
     color: #fff;
     padding: 10px;
@@ -44,13 +35,5 @@
   button:hover {
     background-color: #45a049;
   }
+
   
-  .section-card-img-2 {
-    width: 35%; /* Ajusta el ancho de la imagen según tus necesidades */
-    box-sizing: border-box;
-  }
-  
-  .section-card-img-2 img {
-    width: 100%;
-    height: auto;
-  }
