@@ -52,4 +52,20 @@ main section{
     color: #333;
 
 }
+
+.opcion a{
+    text-decoration: none;
+    color: white;
+
+}
+.opcion a:visited{
+    text-decoration: none;
+    color: white;
+    
+}
+.opcion a:hover{
+    text-decoration: none;
+    color: white;
+    
+}
     

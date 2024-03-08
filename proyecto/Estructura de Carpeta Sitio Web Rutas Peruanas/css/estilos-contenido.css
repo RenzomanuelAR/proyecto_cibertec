@@ -110,9 +110,56 @@ main section{
     color: #333;
 
 }
+.section-card-texto h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #333;
+
+}
 .section-card-texto p{
     margin: 0px;
 
+}
+.section-card-texto span{
+    font-weight: bold;
+    color: #ec671a;
+}
+.section-card-texto ul{
+    padding-bottom: 10px;
+    padding-left: 15px;
+    list-style: none;
+}
+.section-card-precio{
+    border-top: 1px solid chocolate;
+}
+.section-card-precio span{
+    font-size: 20pt;
+    color: #ec671a;
+}
+.section-card-precio h4{
+    position: absolute;
+    margin-top: -15px;
+    margin-left: 0px;
+    padding: 5px 10px 5px 10px;
+    color: #ec671a;
+    border-radius: 0px 20px 20px 0px ;
+    background-color: rgb(231, 207, 170);
+}
+.section-card-precio h5{
+    margin-top: 20px;
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 12pt;
+    color: #333;
+}
+.tachado{
+    text-decoration:line-through
+}
+.section-card-precio p{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
 }
 /*Colores de Tarjeta*/
 .fondo-chocolate{
