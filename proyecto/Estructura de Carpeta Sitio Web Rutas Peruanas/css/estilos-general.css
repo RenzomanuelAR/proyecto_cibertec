@@ -9,7 +9,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: Candara, Arial, Helvetica, sans-serif;
-    background-color: red;
+    background-color: rgb(153, 150, 150);
     color: silver;
     font-size: 16px;
     line-height: 1.5em;
@@ -54,19 +54,14 @@ header {
 #logo {
     width: 250px;
     height: 100px;
-
-}
-/*contenedor del menu*/
-nav {
-    display: flex;
-    padding-right: 20px;
-    padding-left: 20px;    
+    transition: 0.5s;
 }
 
 /*Estilos para el control buscar*/
-
 #buscar {
-    margin: 100px auto;
+    position: absolute;
+    right: 10%;
+    top: 22px;
     width: 300px;
     height: 40px;
 }
@@ -76,7 +71,7 @@ nav {
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-}
+}   
 
 .buscar-1 input#search {
     width: 300px;
@@ -84,7 +79,7 @@ nav {
     background-color: #2b303d;
     border: none;
     font-size: 10pt;
-    float: left;
+  
     color: white;
     padding-left: 45px;
     -webkit-border-radius: 5px;
@@ -142,11 +137,17 @@ nav {
 }
 /*Fin para control buscar*/
   /* menu */
+/*contenedor del menu*/
+nav {
+    padding-right: 20px;
+    padding-left: 20px;    
+}
 
-  #menu ul {
-    list-style:none;
-    margin:0;
-    padding:0;
+#menu .nivel_1 {
+	list-style-type:none;
+	margin:-30px 30px 0px 0px;
+	padding:0;
+	position: absolute;
 }
    
    /* items del menu */
@@ -162,9 +163,9 @@ nav {
     color:#fff;
     text-decoration:none;
     font-weight:400;
-    font-size:15px;
+    font-size:11pt;
     padding:10px;
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Candara, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform:uppercase;
     letter-spacing:1px;
     
@@ -194,13 +195,14 @@ nav {
     top:100%;
     left:0;
     padding:0;
+    list-style-type:none;   
    }
    
    /* items del menu desplegable */
    
    #menu ul ul li {
     float:none;
-    width:150px;
+    width:170px;
     opacity: 90%;
    }
  
@@ -217,6 +219,78 @@ nav {
    #menu ul li:hover > ul {
     display:block;
    }
+
+   /*Estilos boton desplegar menu*/
+.show-menu {
+    top:25px;
+    right: 3%;
+    position:absolute;
+	color: #fff;
+    font-size: 24pt;
+	padding: 0px 2px 0px 2px;
+    border-radius: 4px;
+	display: none;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.show-menu:hover {
+
+	color: #ec420e;
+
+    border: 1px solid rgb(243, 100, 5);
+}
+
+input[type=checkbox]{
+    
+    display: none;
+}
+
+/*Mostrar menú cuando se marca la casilla de verificación invisible*/
+input[type=checkbox]:checked ~ #menu_1{
+    display: block;
+}
+   /*Estilo responsivo ancho menor de 750px*/
+
+@media screen and (max-width : 750px){
+	/*Hacer que los vínculos desplegables aparezcan en línea*/
+	.nivel_1 {
+        position: absolute;
+        top:130px;
+        left: -0px;
+		display: none;
+        width: 180px;
+        background-color: #333;
+        height: 700px;
+        transition: 0.5s;
+        opacity: 95%;
+	}
+	/*Crear espacio vertical*/
+	.nivel_1_li {
+        
+		margin-bottom: 1px;
+
+	}
+	/*Todos los enlaces del menú de ancho completo*/
+	.nivel_1_li, li a {
+		width: 100%;
+	}
+	.nivel_1_li ul {
+        z-index: 1;
+        display: block;
+        float: inline-end;
+        margin-top: -45px;
+		margin-left: 180px;
+	}
+	.show-menu {
+		display:block;
+		cursor:pointer;
+	}
+    #logo {
+        width: 150px;
+        height: 100px;
+    
+    }
+}
 /* pie de pagina*/
     footer{
         background-color: #555;
