@@ -271,17 +271,18 @@ main section{
   }
   /* fin section video*/
 
+
+
+  /*estilos para la seccion del lado derecho*/
   .main-contenido-right section{
     margin-top: 40px ;
     margin-left: 10%;
     width: 80%;
     flex-wrap: wrap;
-    background-color: rgb(222, 226, 226);
+    background-color: rgb(133, 190, 119);
     justify-content: center;
     align-items: center;
-  }
-
-  /*estilos para la seccion del lado derecho*/
+  }  
   .section-head{
     margin-left: 5%;
     width: 100%;
@@ -313,10 +314,11 @@ main section{
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
+    text-shadow: #333;
     text-transform: uppercase;
-    color: #333;
-    border-top: 2px solid #8f8c8c;;
-    border-bottom: 2px solid #8f8c8c;;
+    color: #000000;
+    border-top: 2px solid #c5e0cc;
+    border-bottom: 2px solid #c5e0cc;
 }
 
 .section-card-3{
@@ -350,7 +352,7 @@ main section{
   /* fin - estilos para la seccion del lado derecho*/
 
 
-  .section-card-4{
+.section-card-4{
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid chocolate;
